@@ -12,11 +12,13 @@ public class Main {
             }
     public static void main(String[] args) {
 int sum=0;
+        float  average=0; // здесь будет храниться ср.знач
 //int sum1=0;
         int[] arr = generateRandomArray();
         for (int element: arr) {
             sum+=element;
         }
+        average=sum/arr.length;
         System.out.println( "Сумма трат за месяц составила "+sum+ " рублей");
 
         //for (int index=0;index< arr.length;index++){
@@ -28,5 +30,8 @@ int sum=0;
         Arrays.sort(arr2);
         System.out.println( "Минимальная сумма трат за день составила "+arr2[0]+ " рублей");
         System.out.println( "Максимальная сумма трат за день составила "+arr2[arr2.length-1]+ " рублей");
+        System.out.println( "«Средняя сумма трат за месяц составила " +average+ " рублей");
+
+
     }
 }
