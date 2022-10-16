@@ -26,6 +26,7 @@ int sum=0;
 
         int [] arr2=Arrays.copyOf(arr,arr.length);
         Arrays.sort(arr2);
-        System.out.println( "минимальные траты "+arr2[0]+ " максимальные траты  "+arr2[arr2.length-1]);
+        System.out.println( "Минимальная сумма трат за день составила "+arr2[0]+ " рублей");
+        System.out.println( "Максимальная сумма трат за день составила "+arr2[arr2.length-1]+ " рублей");
     }
 }
